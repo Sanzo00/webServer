@@ -6,13 +6,13 @@ src = $(wildcard ./*.cpp)
 # 将.c替换为.o
 obj = $(patsubst ./%.cpp, ./%.o, $(src))
 
-CC = gcc
+CC = g++
 
 $(target): $(obj)
-	$(CC) -lpthread $(obj) -o $(target)
+	$(CC) $(obj) -o $(target) -lpthread
 
 %.o: %.cpp
-	$(CC) -c -lpthread $< -o $@
+	$(CC) -c $< -o $@ -lpthread
 
 # 声明伪目标
 .PHONY:clean
