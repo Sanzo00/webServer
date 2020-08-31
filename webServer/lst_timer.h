@@ -43,15 +43,6 @@ public:
 
 class sort_timer_lst {
 public:
-    // sort_timer_lst() : head(NULL), tail(NULL) {}
-   // ~sort_timer_lst() {
-   //     while(head) {
-   //         util_timer *tmp = head->next;
-   //         delete head;
-   //         head = tmp;
-   //     }
-   // }
-    
     sort_timer_lst();
     ~sort_timer_lst();
 
